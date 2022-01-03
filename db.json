@@ -1,0 +1,56 @@
+{
+  "categories": [
+    {
+      "name": "Áo phông",
+      "id": 5
+    },
+    {
+      "name": "Áo hoodie",
+      "id": 6
+    },
+    {
+      "name": "Áo bomber",
+      "id": 7
+    },
+    {
+      "name": "Chân váy layer",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "name": "Áo phông unisex form",
+      "image": "https://www.bdresearch.org/wp-content/uploads/2019/10/unisex-la-gi-1.jpg",
+      "categoryId": "5",
+      "price": "150000",
+      "detail": "Áo phông unisex form, màu đen",
+      "id": 5
+    },
+    {
+      "name": "Áo hoodie con heo",
+      "image": "https://salt.tikicdn.com/ts/tmp/42/80/0a/d135541484b769f920cf3f83b0c9f45a.jpg",
+      "categoryId": "6",
+      "detail": "Áo hoodie con heo, màu hồng",
+      "price": "300000",
+      "id": 6
+    },
+    {
+      "name": "Áo hoodie tím",
+      "image": "https://thoitrangduongpho.xyz/wp-content/uploads/2020/04/hodie.jpg",
+      "categoryId": "6",
+      "price": "350000",
+      "detail": "Áo hoodie tím, free size",
+      "id": 7
+    },
+    {
+      "name": "Áo bomber face",
+      "image": "https://bizweb.dktcdn.net/100/398/716/files/31480157a1bd5fe306ac.jpg?v=1604048148413",
+      "categoryId": "7",
+      "price": "180000",
+      "detail": "Áo bomber face mặt cười, màu đen",
+      "id": 8
+    }
+  ],
+  "order": [],
+  "order_detail": []
+}

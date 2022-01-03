@@ -1,0 +1,39 @@
+<input type="file" id="image">
+<button onclick="upload2FireStorage()">Upload</button>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDkCO4ZLBkY1D7xQrn7wV0vO-yLS3ztJMg",
+        authDomain: "web16101-firestore-be416.firebaseapp.com",
+        projectId: "web16101-firestore-be416",
+        storageBucket: "web16101-firestore-be416.appspot.com",
+        messagingSenderId: "368266362835",
+        appId: "1:368266362835:web:91c3d4d3bdb5dc52043926",
+        measurementId: "G-30PR08ETXL"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var storage = firebase.storage();
+    function upload2FireStorage() {
+        let inputFile = document.querySelector('input');
+        let file = inputFile.files[0];
+        var d = new Date();
+        var n = d.getMilliseconds();
+        var storageRef = storage.ref(`Uploads`);
+        storageRef.put(file).then((snapshot) => {
+            snapshot.ref.getDownloadURL().then(function (downloadURL) {
+                console.log("File available at", downloadURL);
+            });
+        });
+    }
+</script>
